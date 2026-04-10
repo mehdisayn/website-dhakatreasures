@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup | Dhaka Treasures</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="signup">
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a href="index.html" class="brand">Dhaka Treasures</a>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="cart.html">Cart <span id="cart-count" class="cart-count">0</span></a>
+          <a href="login.html" class="auth-link logged-out-only">Login</a>
+          <a href="signup.html" class="auth-link logged-out-only">Signup</a>
+          <span id="user-greeting" class="user-greeting hidden"></span>
+          <button id="logout-button" class="button nav-button hidden" type="button">Logout</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container auth-container">
+    <section class="section-heading">
+      <h1>Signup</h1>
+      <p>Create an account.</p>
+    </section>
+
+    <form id="signup-form" class="checkout-form auth-card">
+      <label for="signup-name">Name</label>
+      <input id="signup-name" name="name" type="text" required>
+
+      <label for="signup-phone">Phone</label>
+      <input id="signup-phone" name="phone" type="tel" required>
+
+      <label for="signup-address">Address</label>
+      <textarea id="signup-address" name="address" rows="4" required></textarea>
+
+      <label for="signup-password">Password</label>
+      <input id="signup-password" name="password" type="password" required>
+
+      <button type="submit" class="button">Create Account</button>
+      <p class="form-note">Already have an account? <a href="login.html">Login here</a>.</p>
+    </form>
+
+    <section id="signup-success" class="success-box hidden">
+      <h2>Signup Successful</h2>
+      <p>Your account has been created and you are signed in.</p>
+      <a href="index.html" class="button secondary">Start Shopping</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

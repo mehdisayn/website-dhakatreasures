@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Dhaka Treasures</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="checkout">
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a href="index.html" class="brand">Dhaka Treasures</a>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="cart.html">Cart <span id="cart-count" class="cart-count">0</span></a>
+          <a href="login.html" class="auth-link logged-out-only">Login</a>
+          <a href="signup.html" class="auth-link logged-out-only">Signup</a>
+          <span id="user-greeting" class="user-greeting hidden"></span>
+          <button id="logout-button" class="button nav-button hidden" type="button">Logout</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container narrow">
+    <section class="section-heading">
+      <h1>Checkout</h1>
+      <p>Review your details before placing the order.</p>
+    </section>
+
+    <section id="checkout-login-required" class="success-box hidden">
+      <h2>Login Required</h2>
+      <p>Please login or sign up before proceeding to checkout.</p>
+      <a href="login.html" class="button">Login</a>
+      <a href="signup.html" class="button secondary">Signup</a>
+    </section>
+
+    <form id="checkout-form" class="checkout-form">
+      <label for="customer-name">Name</label>
+      <input id="customer-name" name="name" type="text" required>
+
+      <label for="customer-phone">Phone</label>
+      <input id="customer-phone" name="phone" type="tel" required>
+
+      <label for="customer-address">Address</label>
+      <textarea id="customer-address" name="address" rows="4" required></textarea>
+
+      <button type="submit" class="button">Place Order</button>
+    </form>
+
+    <section id="success-message" class="success-box hidden">
+      <h2>Payment Successful </h2>
+      <p id="success-details">Your order has been placed successfully.</p>
+      <a href="index.html" class="button secondary">Continue Shopping</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

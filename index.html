@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhaka Treasures</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a href="index.html" class="brand">Dhaka Treasures</a>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="cart.html">Cart <span id="cart-count" class="cart-count">0</span></a>
+          <a href="login.html" class="auth-link logged-out-only">Login</a>
+          <a href="signup.html" class="auth-link logged-out-only">Signup</a>
+          <span id="user-greeting" class="user-greeting hidden"></span>
+          <button id="logout-button" class="button nav-button hidden" type="button">Logout</button>
+        </nav>
+      </div>
+      <section class="hero">
+        <h1>Shop</h1>
+        <p>Add your favorite items to the cart.</p>
+      </section>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-heading">
+      <h2>Products</h2>
+      <p>Exclusive collection</p>
+    </section>
+    <section id="product-list" class="product-grid"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

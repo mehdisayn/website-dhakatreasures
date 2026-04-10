@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Dhaka Treasures</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a href="index.html" class="brand">Dhaka Treasures</a>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="cart.html">Cart <span id="cart-count" class="cart-count">0</span></a>
+          <a href="login.html" class="auth-link logged-out-only">Login</a>
+          <a href="signup.html" class="auth-link logged-out-only">Signup</a>
+          <span id="user-greeting" class="user-greeting hidden"></span>
+          <button id="logout-button" class="button nav-button hidden" type="button">Logout</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container auth-container">
+    <section class="section-heading">
+      <h1>Login</h1>
+      <p>Use your account details to sign in.</p>
+    </section>
+
+    <form id="login-form" class="checkout-form auth-card">
+      <label for="login-phone">Phone</label>
+      <input id="login-phone" name="phone" type="tel" required>
+
+      <label for="login-password">Password</label>
+      <input id="login-password" name="password" type="password" required>
+
+      <button type="submit" class="button">Login</button>
+      <p class="form-note">No account yet? <a href="signup.html">Create one here</a>.</p>
+    </form>
+
+    <section id="login-success" class="success-box hidden">
+      <h2>Login Successful</h2>
+      <p>You are now signed in.</p>
+      <a href="index.html" class="button secondary">Go to Home</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

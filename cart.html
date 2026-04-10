@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | Dhaka Treasures</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="cart">
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a href="index.html" class="brand">Dhaka Treasures</a>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="cart.html">Cart <span id="cart-count" class="cart-count">0</span></a>
+          <a href="login.html" class="auth-link logged-out-only">Login</a>
+          <a href="signup.html" class="auth-link logged-out-only">Signup</a>
+          <span id="user-greeting" class="user-greeting hidden"></span>
+          <button id="logout-button" class="button nav-button hidden" type="button">Logout</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container narrow">
+    <section class="section-heading">
+      <h1>Your Cart</h1>
+      <p>items selected for checkout.</p>
+    </section>
+
+    <section id="cart-items" class="cart-list"></section>
+
+    <section class="cart-summary">
+      <h2>Total: ৳<span id="cart-total">0</span></h2>
+      <a href="checkout.html" id="checkout-button" class="button">Proceed to Checkout</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
